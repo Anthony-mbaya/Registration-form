@@ -1,6 +1,6 @@
 body{
     /*The vh unit stands for viewport height, and is relative to 1% of the height of the viewport.
-    100 fits the entire screen of the browser*/
+    100 fits the entire screen of the broser*/
     height: 100vh;
     width: 100%;
     /* get rid of the horizontal scroll-bar, by setting the body default margin added by some browsers to 0.*/
