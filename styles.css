@@ -1,0 +1,74 @@
+body{
+    /*The vh unit stands for viewport height, and is relative to 1% of the height of the viewport.
+    100 fits the entire screen of the browser*/
+    height: 100vh;
+    width: 100%;
+    /* get rid of the horizontal scroll-bar, by setting the body default margin added by some browsers to 0.*/
+    margin: 0;
+    background-color: #1b1b32;
+    color: #f5f6f7;
+    font-family: Tahoma;
+    font-size: 16px;
+}
+label{
+    /*To make them appear on separate lines, add display: block to the label element*/
+    display: block;
+    /*The rem unit stands for root em, and is relative to the font size of the html element.
+            add a margin of 0.5rem 0, to separate them from each other*/
+    margin: 0.5rem 0;
+}
+h1,p{
+    text-align: center;
+    margin:0.5em auto;
+}
+form{
+    margin: auto;
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    padding-bottom: 2em;
+}
+fieldset{
+    border: none;
+    border-bottom: 3px solid #3b3b4f;
+    padding: 2rem 0;
+
+}
+/*to remove at the bottom of the last fieldset*/
+fieldset:last-of-type{
+    border-bottom: none;
+}
+input,select,textarea{
+    /*to make them occupy full lines each*/
+    width: 100%;
+    margin: 10px 0 0 0;
+    /*inrease the height of the text to input*/
+    min-height: 3em;
+
+}
+.inline{
+    width: unset;/*his will remove the earlier rule which set all the input elements to width: 100%.*/
+    /*move buttons away from the label text*/
+    margin: 0 1em 0 0;
+    /*drop the buttons to same line as text*/
+    vertical-align: middle;
+}
+/*to make the all input and textarea elements blend in with the background theme,*/
+input,textarea{
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffff;
+}
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+    min-width: 300px;
+  }
+  a{
+    color:  #dfdfe2;
+  }
